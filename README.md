@@ -1,0 +1,4 @@
+MockExample
+===========
+
+Sample Jmock
