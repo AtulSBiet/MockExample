@@ -84,7 +84,7 @@ public class PricingServiceTest {
         final BigDecimal price = systemUnderTest.getPrice(BAD_SKU);
     }
 
-    @Test(expected = SkuNotFoundException.class)
+    @Test(expected = RuntimeException.class)
     public void getPriceDataAccessThrowsRuntimeException() throws SkuNotFoundException {
         mockingContext.checking(new Expectations() {
             {
